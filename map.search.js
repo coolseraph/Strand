@@ -49,7 +49,7 @@ function init() {
  	query: 
 	{
     select: 'Mapping Address',
-	from: document.getElementById("fusionid")
+	from: document.getElementById("fusionid").innerHTML
  	},
 	styles: [{
   markerOptions: {

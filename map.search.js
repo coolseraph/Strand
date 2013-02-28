@@ -44,8 +44,25 @@ function init() {
   }
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
   //fusion table
-//fusion table is currently commented out
+  //fusion table
+	var layer = new google.maps.FusionTablesLayer({
+ 	query: 
+	{
+    select: 'Mapping Address',
+	from: document.getElementById("fusionID")
+ 	},
+	styles: [{
+  markerOptions: {
+    iconName: "large_green"
+  }
+}]
+}
+//marker sytle
 
+);
+layer.setMap(map);
+
+		//fusion table ends  
 		//fusion table ends  
 
 
